@@ -9,6 +9,10 @@ app.get("/home", (req, res) => {
 
 app.post("/home", (req, res) => {
     res.send("<h1>Hello Request</h1>");
-})
+});
+
+app.delete("/home", (req, res) => {
+    res.send("Deleted");
+});
 
 app.listen(8080, () => console.log("server is up at 8080"));
